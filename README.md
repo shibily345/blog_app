@@ -1,30 +1,96 @@
-# blogit
+# **Blogit - Flutter Internship Assessment**  
 
-A new Flutter project.
+## **Project Overview**  
+Blogit is a Flutter-based application designed to showcase a list of blog posts fetched from **Firebase Firestore**, with **deep linking** support for seamless navigation. This project follows the given assessment requirements while maintaining high code quality and structure.  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application that follows the
-[simple app state management
-tutorial](https://flutter.dev/to/state-management-sample).
+## **Features Implemented**  
+✅ Fetch blog posts from **Firebase Firestore**  
+✅ Display blog posts in a **ListView.builder**  
+✅ **Deep Linking** to open a specific blog post directly  
+✅ Blog post details screen with full content display  
+✅ **MVVM Architecture** for clean code organization  
+✅ **Provider** for state management  
+✅ **Freezed Annotation** for immutable models  
+✅ **Smooth UI & Animations** for enhanced user experience  
+✅ **Optimized Performance** with pagination support  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
 
-## Assets
+## **Tech Stack Used**  
+- **Flutter** (Latest Stable Version)  
+- **Dart** (Programming Language)  
+- **Firebase Firestore** (Database)  
+- **Provider (State Management)**  
+- **GoRouter** (Deep Linking & Navigation)  
+- **Freezed (Code Generation & Immutability)**  
+- **ScreenUtil (Responsive UI)**  
+- **HTTP Package (Networking & API Requests)**  
 
-The `assets` directory houses images, fonts, and any other files you want to
-include with your application.
+---
 
-The `assets/images` directory contains [resolution-aware
-images](https://flutter.dev/to/resolution-aware-images).
+## **Installation & Setup**  
 
-## Localization
+### **Prerequisites**  
+- Flutter SDK installed ([Download Flutter](https://flutter.dev/docs/get-started/install))  
+- Dart installed  
+- Android Studio or VS Code  
+- A connected Android/iOS device or emulator  
+- Firebase Project Set Up  
 
-This project generates localized messages based on arb files found in
-the `lib/src/localization` directory.
+### **Steps to Run the Project**  
 
-To support additional languages, please visit the tutorial on
-[Internationalizing Flutter apps](https://flutter.dev/to/internationalization).
-# blog_app
+1. **Clone the Repository**  
+   ```sh
+   git clone https://github.com/your-username/blogit.git  
+   cd blogit  
+   ```  
+2. **Install Dependencies**  
+   ```sh
+   flutter pub get  
+   ```  
+3. **Configure Firebase**  
+   - Create a Firebase project.  
+   - Add `google-services.json` (Android) & `GoogleService-Info.plist` (iOS).  
+   - Enable Firestore in the Firebase console.  
+
+4. **Run the App**  
+   ```sh
+   flutter run  
+   ```  
+
+---
+
+## **Firebase Deep Linking Setup**  
+
+1. Open Firebase Console → Go to **Dynamic Links**.  
+2. Configure your app’s **Dynamic Link domain**.  
+3. Enable Firebase **Dynamic Links API**.  
+4. Implement **GoRouter** in the app to handle deep links.  
+
+Test deep linking:  
+
+```sh
+# Android  
+adb shell am start -W -a android.intent.action.VIEW -d "https://blogit.com/post?id=123" your.package.name  
+
+# iOS  
+xcrun simctl openurl booted "https://blogit.com/post?id=123"  
+```  
+
+---
+
+## **Submission Details**  
+- **GitHub Repository:** [Blogit Repo](https://github.com/your-username/blogit)  
+- **Demo Video:** Available in the `demo/` folder (`demo/demo.mov`)  
+- **Deadline:** [Insert Deadline Here]  
+
+---
+
+## **Contact**  
+For any clarifications, reach out via **Email** or **Internshala Messages**.  
+
+---  
+
+_This project was developed as part of the Blogit Flutter Internship Assessment._ 🚀  
