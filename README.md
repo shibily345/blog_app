@@ -14,7 +14,7 @@ Blogit is a Flutter-based application designed to showcase a list of blog posts 
 ✅ **Provider** for state management  
 ✅ **Freezed Annotation** for immutable models  
 ✅ **Smooth UI & Animations** for enhanced user experience  
-✅ **Optimized Performance** with pagination support  
+✅ **Optimized Performance** 
 
 ---
 
