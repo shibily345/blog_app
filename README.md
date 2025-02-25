@@ -33,7 +33,6 @@ at demo folder
 - **GoRouter** (Deep Linking & Navigation)  
 - **Freezed (Code Generation & Immutability)**  
 - **ScreenUtil (Responsive UI)**  
-- **HTTP Package (Networking & API Requests)**  
 
 ---
 
@@ -50,8 +49,7 @@ at demo folder
 
 1. **Clone the Repository**  
    ```sh
-   git clone https://github.com/your-username/blogit.git  
-   cd blogit  
+   
    ```  
 2. **Install Dependencies**  
    ```sh
@@ -70,26 +68,22 @@ at demo folder
 ---
 
 ## ** Deep Linking Setup**  
-
-1. Open Firebase Console → Go to **Dynamic Links**.  
-2. Configure your app’s **Dynamic Link domain**.  
-3. Enable Firebase **Dynamic Links API**.  
-4. Implement **GoRouter** in the app to handle deep links.  
+  
 
 Test deep linking:  
 
 ```sh
 # Android  
-adb shell am start -W -a android.intent.action.VIEW -d "https://blogit.com/post?id=123" your.package.name  
+adb shell am start -W -a android.intent.action.VIEW -d Blogit://blog/2   
 
 # iOS  
-xcrun simctl openurl booted "https://blogit.com/post?id=123"  
+xcrun simctl openurl booted Blogit://blog/2 
 ```  
 
 ---
 
 ## **Submission Details**  
-- **GitHub Repository:** [Blogit Repo](https://github.com/your-username/blogit)  
+- **GitHub Repository:** [Blogit Repo](https://github.com/shibily345/blog_app)  
 - **Demo Video:** Available in the `demo/` folder (`demo/demo.mov`)  
 - **Deadline:** 25 feb 2025
   
