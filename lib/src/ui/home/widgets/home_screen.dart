@@ -107,6 +107,7 @@ class BlogHomeScreen extends StatelessWidget {
                   ))
             ],
           ),
+          TextFormField(),
           Padding(
             padding: const EdgeInsets.only(left: 20.0, bottom: 20),
             child: Text(
