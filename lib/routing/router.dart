@@ -1,5 +1,3 @@
-import 'package:blogit/src/settings/settings_controller.dart';
-import 'package:blogit/src/settings/settings_view.dart';
 import 'package:blogit/src/ui/home/view_models/home_viewmodel.dart';
 import 'package:blogit/src/ui/home/widgets/detail_screen.dart';
 import 'package:blogit/src/ui/home/widgets/home_screen.dart';
@@ -8,7 +6,7 @@ import 'package:provider/provider.dart';
 
 import 'routes.dart';
 
-GoRouter router(SettingsController settingsController) => GoRouter(
+GoRouter router() => GoRouter(
       initialLocation: Routes.home,
       debugLogDiagnostics: true,
       routes: [
@@ -31,14 +29,6 @@ GoRouter router(SettingsController settingsController) => GoRouter(
             return BlogDetailScreen(
               id: id,
               viewModel: viewModel,
-            );
-          },
-        ),
-        GoRoute(
-          path: Routes.setting,
-          builder: (context, state) {
-            return SettingsView(
-              controller: settingsController,
             );
           },
         ),

@@ -1,0 +1,2 @@
+/Users/mhdshibil/career/blogit/android/app/.cxx/RelWithDebInfo/6s5c6b11/x86_64/CMakeFiles/edit_cache.dir
+/Users/mhdshibil/career/blogit/android/app/.cxx/RelWithDebInfo/6s5c6b11/x86_64/CMakeFiles/rebuild_cache.dir
