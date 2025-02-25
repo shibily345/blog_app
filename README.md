@@ -91,7 +91,8 @@ xcrun simctl openurl booted "https://blogit.com/post?id=123"
 ## **Submission Details**  
 - **GitHub Repository:** [Blogit Repo](https://github.com/your-username/blogit)  
 - **Demo Video:** Available in the `demo/` folder (`demo/demo.mov`)  
-- **Deadline:** [Insert Deadline Here]  
+- **Deadline:** 25 feb 2025
+  
 
 ---
 
