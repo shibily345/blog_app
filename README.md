@@ -18,8 +18,8 @@ Blogit is a Flutter-based application designed to showcase a list of blog posts 
 
 ---
 
-# Demo Video  
-[🎥 Watch Demo Video]([demo/demo.mov](https://drive.google.com/drive/folders/1Sowjiaj8tB84kmdS579wje-B8IWwh7-o?usp=sharing))
+## 🎥 Demo Video
+[![Watch the Demo](https://img.icons8.com/fluency/48/youtube-play.png)]([https://drive.google.com/file/d/YOUR_VIDEO_ID/view](https://drive.google.com/drive/folders/1Sowjiaj8tB84kmdS579wje-B8IWwh7-o?usp=sharing))
 
 ---
 
