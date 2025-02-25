@@ -14,7 +14,14 @@ Blogit is a Flutter-based application designed to showcase a list of blog posts 
 ✅ **Provider** for state management  
 ✅ **Freezed Annotation** for immutable models  
 ✅ **Smooth UI & Animations** for enhanced user experience  
-✅ **Optimized Performance** with pagination support  
+✅ **Optimized Performance** 
+
+---
+
+
+# Demo Video  
+[🎥 Watch Demo Video](demo/demo.mov)
+at demo folder
 
 ---
 
@@ -26,7 +33,6 @@ Blogit is a Flutter-based application designed to showcase a list of blog posts 
 - **GoRouter** (Deep Linking & Navigation)  
 - **Freezed (Code Generation & Immutability)**  
 - **ScreenUtil (Responsive UI)**  
-- **HTTP Package (Networking & API Requests)**  
 
 ---
 
@@ -43,8 +49,7 @@ Blogit is a Flutter-based application designed to showcase a list of blog posts 
 
 1. **Clone the Repository**  
    ```sh
-   git clone https://github.com/your-username/blogit.git  
-   cd blogit  
+   
    ```  
 2. **Install Dependencies**  
    ```sh
@@ -62,29 +67,26 @@ Blogit is a Flutter-based application designed to showcase a list of blog posts 
 
 ---
 
-## **Firebase Deep Linking Setup**  
-
-1. Open Firebase Console → Go to **Dynamic Links**.  
-2. Configure your app’s **Dynamic Link domain**.  
-3. Enable Firebase **Dynamic Links API**.  
-4. Implement **GoRouter** in the app to handle deep links.  
+## ** Deep Linking Setup**  
+  
 
 Test deep linking:  
 
 ```sh
 # Android  
-adb shell am start -W -a android.intent.action.VIEW -d "https://blogit.com/post?id=123" your.package.name  
+adb shell am start -W -a android.intent.action.VIEW -d Blogit://blog/2   
 
 # iOS  
-xcrun simctl openurl booted "https://blogit.com/post?id=123"  
+xcrun simctl openurl booted Blogit://blog/2 
 ```  
 
 ---
 
 ## **Submission Details**  
-- **GitHub Repository:** [Blogit Repo](https://github.com/your-username/blogit)  
+- **GitHub Repository:** [Blogit Repo](https://github.com/shibily345/blog_app)  
 - **Demo Video:** Available in the `demo/` folder (`demo/demo.mov`)  
-- **Deadline:** [Insert Deadline Here]  
+- **Deadline:** 25 feb 2025
+  
 
 ---
 
