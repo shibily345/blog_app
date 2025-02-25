@@ -35,6 +35,14 @@ dev_dependencies:
     sdk: flutter
   freezed: ^2.5.8
   json_serializable: ^6.9.4
+  flutter_launcher_icons: "^0.14.3"
+  
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/icon.png"
+  min_sdk_android: 21
+
 
 flutter:
   uses-material-design: true
@@ -45,3 +53,4 @@ flutter:
   assets:
     # Add assets from the images directory to the application.
     - assets/images/
+    - assets/lottie/

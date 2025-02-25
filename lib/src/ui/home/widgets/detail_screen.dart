@@ -35,10 +35,7 @@ class _BlogDetailScreenState extends State<BlogDetailScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          // title: Text("Blog Details"),
-          // backgroundColor: Colors.black,
-          ),
+      appBar: AppBar(),
       body: blog == null
           ? Center(
               child: CircularProgressIndicator(),
@@ -49,10 +46,16 @@ class _BlogDetailScreenState extends State<BlogDetailScreen> {
                 children: [
                   // Blog Image
                   SizedBox(
-                    child: CachedImage(
-                      imageUrl: blog!.imageURL,
-                      width: screenWidth(context),
-                      height: 250,
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20),
+                        child: CachedImage(
+                          imageUrl: blog!.imageURL,
+                          width: screenWidth(context),
+                          height: screenWidth(context),
+                        ),
+                      ),
                     ),
                   ),
 

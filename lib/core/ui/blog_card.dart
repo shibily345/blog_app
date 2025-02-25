@@ -41,8 +41,8 @@ class BlogCard extends StatelessWidget {
                 ],
                 stops: [
                   0.0,
-                  0.2,
-                  0.7,
+                  0.3,
+                  0.5,
                 ],
               ),
             ),
@@ -65,26 +65,35 @@ class BlogCard extends StatelessWidget {
                 SizedBox(height: 8),
                 Text(
                   maxLines: 2,
-                  blog.content,
+                  blog.summary,
                   style: TextStyle(
                     color: Colors.white70,
                     fontSize: 14,
                   ),
                 ),
                 SizedBox(height: 12),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white.withOpacity(0.2),
-                    foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
+                Row(
+                  children: [
+                    Text(
+                      "2 hours ago",
+                      style: TextStyle(color: Colors.grey),
                     ),
-                  ),
-                  onPressed: () {
-                    debugPrint("${blog.id}**********************");
-                    context.push("/blog/${blog.id}");
-                  },
-                  child: Text("Read More"),
+                    Spacer(),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.white.withOpacity(0.2),
+                        foregroundColor: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      onPressed: () {
+                        debugPrint("${blog.id}**********************");
+                        context.push("/blog/${blog.id}");
+                      },
+                      child: Text("Read More"),
+                    ),
+                  ],
                 ),
               ],
             ),
