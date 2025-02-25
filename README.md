@@ -18,6 +18,11 @@ Blogit is a Flutter-based application designed to showcase a list of blog posts 
 
 ---
 
+# Demo Video  
+[🎥 Watch Demo Video](demo/demo.mov)
+
+---
+
 ## **Tech Stack Used**  
 - **Flutter** (Latest Stable Version)  
 - **Dart** (Programming Language)  
@@ -62,7 +67,7 @@ Blogit is a Flutter-based application designed to showcase a list of blog posts 
 
 ---
 
-## **Firebase Deep Linking Setup**  
+## ** Deep Linking Setup**  
 
 1. Open Firebase Console → Go to **Dynamic Links**.  
 2. Configure your app’s **Dynamic Link domain**.  
