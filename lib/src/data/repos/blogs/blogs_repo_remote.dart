@@ -11,21 +11,10 @@ class BlogRepositoryRemote implements BlogRepository {
 
   final FirebaseServices _firebaseServices;
 
-  // List<Blog>? _cachedData;
-
   @override
   Future<Result<List<Blog>>> getBlogs() async {
-    // if (_cachedData == null) {
-    // No cached data, request blogs from API
     final result = await _firebaseServices.getBlogsFromFirestore();
-    if (result is Ok<List<Blog>>) {
-      // Store data in cache
-      // _cachedData = result.value;
-    }
+    if (result is Ok<List<Blog>>) {}
     return result;
-    // } else {
-    //   // Return cached data if available
-    //   return Result.ok(_cachedData!);
-    // }
   }
 }

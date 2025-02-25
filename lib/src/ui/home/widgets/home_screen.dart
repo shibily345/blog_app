@@ -73,12 +73,9 @@ class BlogHomeScreen extends StatelessWidget {
                 itemCount: viewModel.blogs.length + 1,
                 itemBuilder: (BuildContext context, int index) {
                   if (index == 0) {
-                    return _customHeaderWidget(
-                        context); // Your custom widget at the top
+                    return _customHeaderWidget(context);
                   } else {
-                    return BlogCard(
-                        blog: viewModel
-                            .blogs[index - 1]); // Adjust index for blogs
+                    return BlogCard(blog: viewModel.blogs[index - 1]);
                   }
                 },
               ).animate().moveY().fadeIn();
@@ -99,10 +96,6 @@ class BlogHomeScreen extends StatelessWidget {
             children: [
               Lottie.asset("assets/lottie/logo.json",
                   repeat: false, height: 80.h, width: 80.h),
-              // Text(
-              //   "BlogIt",
-              //   style: TextStyle(fontSize: 28, fontWeight: FontWeight.w600),
-              // ),
               Spacer(),
               IconButton(
                   onPressed: () {
@@ -114,7 +107,6 @@ class BlogHomeScreen extends StatelessWidget {
                   ))
             ],
           ),
-          // verticalSpaceMedium,
           Padding(
             padding: const EdgeInsets.only(left: 20.0, bottom: 20),
             child: Text(

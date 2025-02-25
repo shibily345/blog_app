@@ -1,8 +1,5 @@
-// Copyright 2024 The Flutter team. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 abstract final class Dimens {
   const Dimens();
@@ -23,14 +20,14 @@ abstract final class Dimens {
 
   /// Horizontal symmetric padding for screen edges
   EdgeInsets get edgeInsetsScreenHorizontal =>
-      EdgeInsets.symmetric(horizontal: paddingScreenHorizontal);
+      EdgeInsets.symmetric(horizontal: paddingScreenHorizontal.w);
 
   /// Symmetric padding for screen edges
   EdgeInsets get edgeInsetsScreenSymmetric => EdgeInsets.symmetric(
-      horizontal: paddingScreenHorizontal, vertical: paddingScreenVertical);
+      horizontal: paddingScreenHorizontal.h, vertical: paddingScreenVertical.h);
 
   static const Dimens desktop = _DimensDesktop();
-  static const Dimens mobile = _DimensMobile();
+  static Dimens mobile = _DimensMobile();
 
   /// Get dimensions definition based on screen size
   factory Dimens.of(BuildContext context) =>
@@ -43,15 +40,15 @@ abstract final class Dimens {
 /// Mobile dimensions
 final class _DimensMobile extends Dimens {
   @override
-  final double paddingScreenHorizontal = Dimens.paddingHorizontal;
+  final double paddingScreenHorizontal = Dimens.paddingHorizontal.w;
 
   @override
-  final double paddingScreenVertical = Dimens.paddingVertical;
+  final double paddingScreenVertical = Dimens.paddingVertical.h;
 
   @override
   final double profilePictureSize = 64.0;
 
-  const _DimensMobile();
+  _DimensMobile();
 }
 
 /// Desktop/Web dimensions

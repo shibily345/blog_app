@@ -10,7 +10,6 @@ class HomeViewModel extends ChangeNotifier {
     required BlogRepository blogRepository,
   }) : _blogRepository = blogRepository {
     load = Command0(_load)..execute();
-    // load = Command0(_loadWithId)..execute();
   }
   final _log = Logger('HomeViewModel');
   late Command0 load;
@@ -47,7 +46,6 @@ class HomeViewModel extends ChangeNotifier {
       if (result is Ok<List<Blog>>) {
         final blog = result.value.firstWhere(
           (blog) => blog.id == id,
-          // orElse: () => Blog(id: "-1", title: "Not Found", content: "Blog not found",), // Handle missing blog
         );
         _log.fine('Loaded Blogs');
         return blog;
@@ -55,7 +53,7 @@ class HomeViewModel extends ChangeNotifier {
         _log.warning('Failed to load Blogs', result.error);
       }
 
-      return null; // Return null if loading fails
+      return null;
     } finally {
       notifyListeners();
     }

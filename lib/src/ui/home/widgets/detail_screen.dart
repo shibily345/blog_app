@@ -44,7 +44,6 @@ class _BlogDetailScreenState extends State<BlogDetailScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Blog Image
                   SizedBox(
                     child: Padding(
                       padding: const EdgeInsets.all(10.0),
@@ -58,8 +57,6 @@ class _BlogDetailScreenState extends State<BlogDetailScreen> {
                       ),
                     ),
                   ),
-
-                  // viewModel.blog Title
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Text(
@@ -70,8 +67,6 @@ class _BlogDetailScreenState extends State<BlogDetailScreen> {
                       ),
                     ),
                   ),
-
-                  // viewModel.blog Content
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
                     child: Text(
@@ -90,8 +85,6 @@ class _BlogDetailScreenState extends State<BlogDetailScreen> {
                       ),
                     ),
                   ),
-
-                  // viewModel.blog Content
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
                     child: Text(
@@ -100,7 +93,6 @@ class _BlogDetailScreenState extends State<BlogDetailScreen> {
                       style: TextStyle(fontSize: 16, height: 1.5),
                     ),
                   ),
-
                   SizedBox(height: 20),
                 ],
               ),
