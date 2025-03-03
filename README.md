@@ -1,4 +1,4 @@
-# **Blogit - Flutter Internship Assessment**  
+# **Blogit - Flutter Internship Assignment**  
 
 ## **Project Overview**  
 Blogit is a Flutter-based application designed to showcase a list of blog posts fetched from **Firebase Firestore**, with **deep linking** support for seamless navigation. This project follows the given assessment requirements while maintaining high code quality and structure.  
@@ -95,4 +95,4 @@ For any clarifications, reach out via **Email** or **Internshala Messages**.
 
 ---  
 
-_This project was developed as part of the Blogit Flutter Internship Assessment._ 🚀  
+_This project was developed as part of the Zarity Health Flutter Internship Assignment._ 🚀  
