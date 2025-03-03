@@ -1,5 +1,6 @@
 import 'package:blogit/core/ui/blog_card.dart';
 import 'package:blogit/core/ui/error_indicator.dart';
+import 'package:blogit/core/ui/search_bar.dart';
 import 'package:blogit/routing/routes.dart';
 import 'package:blogit/src/ui/home/view_models/home_viewmodel.dart';
 import 'package:flutter/material.dart';
@@ -96,6 +97,11 @@ class BlogHomeScreen extends StatelessWidget {
             children: [
               Lottie.asset("assets/lottie/logo.json",
                   repeat: false, height: 80.h, width: 80.h),
+              // horizontalSpaceSmall,
+              Text(
+                "BlogIt",
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
+              ),
               Spacer(),
               IconButton(
                   onPressed: () {
@@ -107,14 +113,17 @@ class BlogHomeScreen extends StatelessWidget {
                   ))
             ],
           ),
-          TextFormField(),
           Padding(
-            padding: const EdgeInsets.only(left: 20.0, bottom: 20),
-            child: Text(
-              "Blogs\nFor You",
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600),
-            ),
+            padding: const EdgeInsets.all(20.0),
+            child: AppSearchBar(),
           ),
+          // Padding(
+          //   padding: const EdgeInsets.only(left: 20.0, bottom: 20),
+          //   child: Text(
+          //     "Blogs\nFor You",
+          //     style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600),
+          //   ),
+          // ),
         ],
       ),
     );

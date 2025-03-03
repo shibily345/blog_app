@@ -3,6 +3,7 @@ import 'package:blogit/core/ui/image.dart';
 import 'package:blogit/src/data/services/models/blog_model.dart';
 import 'package:blogit/src/ui/home/view_models/home_viewmodel.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 class BlogDetailScreen extends StatefulWidget {
   final String id;
@@ -94,7 +95,7 @@ class _BlogDetailScreenState extends State<BlogDetailScreen> {
                     ),
                   ),
                   SizedBox(height: 20),
-                ],
+                ].animate().fadeIn(duration: Duration(milliseconds: 600)),
               ),
             ),
     );
